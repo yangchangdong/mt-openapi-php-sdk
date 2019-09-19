@@ -12,7 +12,7 @@
 
 ```
 php
-    composer require ddxq/mt-openapi-php-sdk
+    composer require yangchangdong/mt-openapi-php-sdk
 ```
 
 ### 基本用法
@@ -21,13 +21,13 @@ php
 php
     use MtOpenApi\Config\Config;
     use MtOpenApi\Api\ShopService;
-    
+
     //实例化一个配置类
     $config = new Config($app_key, $app_secret, false);
-    
+
     //使用config和token对象，实例化一个服务对象
     $shop_service = new ShopService($token, $config);
-    
+
     //调用服务方法，获取资源
     $shop = $shop_service->->get_shop_ids();
 ```
