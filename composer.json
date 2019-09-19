@@ -1,8 +1,8 @@
 {
-    "name": "yangchangdong/mt_openapi_sdk",
-    "description": "this a test meituan openapi php sdk",
-    "type": "composer-plugin",
+    "name": "yangchangdong/mt-openapi-php-sdk",
+    "description": "mt-openapi-php-sdk",
     "license": "MIT",
+    "version": "1.0.0",
     "authors": [
         {
             "name": "yangchangdong",
@@ -10,7 +10,11 @@
         }
     ],
     "require": {
-       "php": ">=5.4.0"
+        "php": ">=5.4.0"
     },
-
+    "autoload": {
+        "psr-4": {
+            "MtOpenApi\\": "src/MtOpenApi"
+        }
+    }
 }
