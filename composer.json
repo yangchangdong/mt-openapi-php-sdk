@@ -1,0 +1,16 @@
+{
+    "name": "yangchangdong/mt_openapi_sdk",
+    "description": "this a test meituan openapi php sdk",
+    "type": "composer-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "yangchangdong",
+            "email": "yangchangdong@126.com"
+        }
+    ],
+    "require": {
+       "php": ">=5.4.0"
+    },
+
+}
