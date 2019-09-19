@@ -11,7 +11,7 @@
     ],
     "require": {
         "php": ">=7.0",
-        "yangchangdong/mt_openapi_sdk": "master"
+        "yangchangdong/mt-openapi-php-sdk": "master"
     },
     "autoload": {
         "psr-4": {
