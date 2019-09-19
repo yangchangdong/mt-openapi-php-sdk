@@ -77,4 +77,6 @@ class ShopService extends RequestService
         return $this->call('poiTag/list',$params,self::METHOD_GET);
     }
 
+
+
 }

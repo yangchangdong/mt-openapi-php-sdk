@@ -31,3 +31,14 @@ php
     //调用服务方法，获取资源
     $shop = $shop_service->->get_shop_ids();
 ```
+
+### 感谢
+```$xslt
+ddxq/mt-openapi-php-sdk 提供的初始代码，在其上进行了一些修改
+```
+
+### 变更记录
+```$xslt
+1、请求地址由http 改为https
+2、增加了部分接口
+```
