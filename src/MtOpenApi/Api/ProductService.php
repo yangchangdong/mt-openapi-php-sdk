@@ -201,4 +201,31 @@ class ProductService extends RequestService
         return $this->call('image/upload',$params,self::METHOD_POST);
     }
 
+    /**
+     * 根据商品名称和规格名称更换新的商品编码
+     * @param $shop_id 三方门店IDapp_poi_code
+     * @param $product_name
+     * @param $category_name
+     * @param $spec
+     * @param $app_food_code
+     * @param $sku_id
+     * @return mixed
+     * @throws \Exception
+     * food/updateAppFoodCodeByNameAndSpec 根据商品名称和规格名称更换新的商品编码
+     * https://waimaiopen.meituan.com/api/v1/food/updateAppFoodCodeByNameAndSpec
+     */
+
+    public function update_app_food_code_by_name_and_spec($shop_id,$product_name,$category_name,$spec,$app_food_code,$sku_id)
+    {
+        $params = array(
+            'app_poi_code'  =>$shop_id,
+            'name'          =>$product_name,
+            'category_name' =>$category_name,
+            'spec'          =>$spec,
+            'app_food_code' =>$app_food_code,
+            'sku_id'        =>$sku_id,
+        );
+        return $this->call('/food/updateAppFoodCodeByNameAndSpec ',$params,self::METHOD_POST);
+    }
+
 }
