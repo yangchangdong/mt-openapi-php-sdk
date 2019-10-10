@@ -161,7 +161,8 @@ class Client
         $resp = json_decode($resp,true);
 		if(isset($resp['error']['code']))
         {
-            throw new Exception($resp['error']['code'],$resp['error']['msg']);
+            //throw new Exception($resp['error']['code'],$resp['error']['msg']);
+            throw new Exception($resp['error']['msg'],$resp['error']['code']);
         }
         return $resp['data'];
 	}

@@ -225,7 +225,7 @@ class ProductService extends RequestService
             'app_food_code' =>$app_food_code,
             'sku_id'        =>$sku_id,
         );
-        return $this->call('/food/updateAppFoodCodeByNameAndSpec ',$params,self::METHOD_POST);
+        return $this->call('food/updateAppFoodCodeByNameAndSpec',$params,self::METHOD_POST);
     }
 
 }
